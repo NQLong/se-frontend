@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "./Header.css";
+import { SignoutUser } from "../../actions/UserAction";
+import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 
 import {
   DownOutlined,
   ShoppingCartOutlined,
   SearchOutlined,
-} from "@ant-design/icons"; 
+} from "@ant-design/icons";
 
 function Header(props) {
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  const [showAccount, setShowAccount] = useState(false);
+  const [showAccount2, setShowAccount2] = useState(false);
+
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo, error } = userSignin;
+  console.log(userInfo);
+  const [search, setSearch] = useState("");
+
+  const [menu, setMenu] = useState(true);
+
+  const handleSignout = () => {
+    console.log("dang xat");
+    dispatch(SignoutUser());
+  };
+
 
   return (
     <div className="header">
@@ -25,39 +46,40 @@ function Header(props) {
               name="search"
               placeholder="Tìm kiếm ..."
             ></input>
-            <SearchOutlined></SearchOutlined>
+            <SearchOutlined ></SearchOutlined>
           </form>
         </div>
-        <ul className="menu-list" id={'' ? "hidden" : ""}>
+        <ul className="menu-list" id={menu ? "hidden" : ""}>
           <li className="active">
             <Link to="/"> Trang Chủ </Link>
           </li>
           <li>
             <Link to="/product"> Món ăn </Link>
           </li>
-          {'' ? (
-            <li >
+          {userInfo ? (
+            <li onClick={() => setShowAccount2(!showAccount2)}>
               <Link>
+                {userInfo.name}
                 <DownOutlined style={{ fontSize: "14px" }} />
               </Link>
-              {'' ? (
+              {showAccount2 ? (
                 <div className="menu-drop">
-                  {'' ? <Link to="/admin">Admin</Link> : ""}
+                  {userInfo.isAdmin ? <Link to="/admin">Admin</Link> : ""}
                   <Link to="/myOrder">Đơn hàng</Link>
-                  <Link>Đăng xuất</Link>
+                  <Link onClick={() => handleSignout()}>Đăng xuất</Link>
                 </div>
               ) : (
                 ""
               )}
             </li>
           ) : (
-            <li>
+            <li onClick={() => setShowAccount(!showAccount)}>
               <Link>
                 Tài khoản
                 <DownOutlined style={{ fontSize: "14px" }} />
               </Link>
 
-              {'' ? (
+              {showAccount ? (
                 <div className="menu-drop">
                   <Link to="register">Đăng kí</Link>
                   <Link to="login">Đăng nhập</Link>
@@ -72,11 +94,11 @@ function Header(props) {
               <ShoppingCartOutlined
                 style={{ fontSize: "30px" }}
               ></ShoppingCartOutlined>
-              <span className="count"> </span>
+              <span className="count">  </span>
             </Link>
           </li>
         </ul>
-        <div className="bar" >
+        <div className="bar" onClick={() => setMenu(!menu)}>
           <span className="line"></span>
           <span className="line"></span>
           <span className="line"></span>
