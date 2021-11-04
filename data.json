@@ -1,0 +1,241 @@
+{
+  "pizza": [
+    {
+      "id": 1,
+      "image": "https://images.foody.vn/res/g12/113651/s120x120/a6a21bb5-aa3a-49d9-a8f5-4fc3a55a69ec.jpeg",
+      "name": "[Pizza Chất] Gà BBQ Nướng Dứa (Chicken Delight)",
+      "salePrice": 89000,
+      "price": 120000,
+      "reviews": "5, totsadasdghasjdgjsadgjhas",
+      "description": "Thịt gà nướng cùng với dứa và phô mai thượng hạng",
+      "blog": "ngon, re"
+    },
+    {
+      "id": 2,
+      "image": "https://images.foody.vn/res/g12/113651/s120x120/a6a21bb5-aa3a-49d9-a8f5-4fc3a55a69ec.jpeg",
+      "name": "[Pizza Chất] Giăm Bông và Thịt Xông Khói (Ham & Bacon)",
+      "salePrice": 89000,
+      "price": 120000
+    },
+    {
+      "id": 3,
+      "image": "https://images.foody.vn/res/g12/113651/s120x120/db3166fa-b554-4e3d-a124-787a6da5-9d827404-210505142617.jpeg",
+      "name": "PIZZA HẢI SẢN & ĐÀO (Seafood & Peach)",
+      "salePrice": 169000,
+      "price": 200000
+    },
+    {
+      "id": 4,
+      "image": "https://nhahangkimgiadalat.com/images/slide/feb216bdd35afa73086fbab2b89b059c.jpg",
+      "name": "Pizza Hải Sản Pesto Xanh (Secret Recipe Seafood Pesto)",
+      "salePrice": 169000,
+      "price": 0
+    },
+    {
+      "id": 5,
+      "image": "https://images.foody.vn/res/g12/113651/s120x120/2018615141312-super-deluxe.jpg",
+      "name": "Pizza 5 loại thịt đặc biệt và rau củ (Super Deluxe)",
+      "salePrice": 119000,
+      "price": 150000
+    }
+  ],
+  "sushi": [
+    {
+      "id": 6,
+      "image": "https://images.foody.vn/res/g99/984820/s570x570/b4d1e555-3f25-4f80-8c37-c4c6cb829d2c.jpg",
+      "name": "Cơm trộn Sashimi",
+      "salePrice": 89000,
+      "price": 109000
+    },
+    {
+      "id": 7,
+      "image": "https://images.foody.vn/res/g99/984820/s570x570/67a75d73-1f03-475c-9ba3-910a2737-f7285efc-211018135059.jpeg",
+      "name": "Combo mix 8 viên",
+      "salePrice": 79000,
+      "price": 99000
+    },
+    {
+      "id": 8,
+      "image": "https://images.foody.vn/res/g99/984820/s570x570/6672beae-2e5d-47b2-a500-ea9ac97b77c5.jpeg",
+      "name": "Combo sushi cá hồi",
+      "salePrice": 59000,
+      "price": 87000
+    },
+    {
+      "id": 9,
+      "image": "https://images.foody.vn/res/g99/984820/s120x120/05c79e0f-d715-4d62-96e8-129991ab01e0.jpeg",
+      "name": "Sushi cuộn cá hồi",
+      "salePrice": 32000,
+      "price": 0
+    },
+    {
+      "id": 10,
+      "image": "https://images.foody.vn/res/g99/984820/s120x120/ae9ae99f-c34d-460a-b24f-710f3da94eee.jpg",
+      "name": "Sushi lươn nướng",
+      "salePrice": 38000,
+      "price": 50000
+    }
+  ],
+  "trangmieng": [
+    {
+      "_id": 11,
+      "image": "https://cdn.tgdd.vn/2021/10/CookDishThumb/cach-lam-banh-dau-nanh-nuong-thom-ngon-bo-duong-d-thumb-620x620-1.jpg",
+      "name": "Bánh đậu nành nướng",
+      "salePrice": 20000,
+      "price": 0
+    },
+    {
+        "_id": 12,
+        "image": "https://cdn.tgdd.vn/2021/10/CookDishThumb/cach-lam-banh-bong-lan-yen-mach-cam-sua-chua-thom-ngon-de-lam-thumb-620x620.jpg",
+        "name": "Bánh bông lan yến mạch sữa chua",
+        "salePrice": 30000,
+        "price": 0
+    },
+    {
+        "_id": 13,
+        "image": "https://cdn.tgdd.vn/2021/10/CookDishThumb/cach-lam-che-khuc-bach-khong-dung-whipping-cream-deo-mem-cuc-thumb-620x620.jpg",
+        "name": "Chè khúc bạch",
+        "salePrice": 30000,
+        "price": 0
+    },
+    {
+        "_id": 14,
+        "image": "https://cdn.tgdd.vn/2021/10/CookDishThumb/cach-lam-pudding-bi-do-mem-thom-beo-ngay-cho-be-don-halloween-thumb-620x620.jpg",
+        "name": "Bánh plan bí đỏ",
+        "salePrice": 15000,
+        "price": 0
+    },
+    {
+        "_id": 15,
+        "image": "https://cdn.tgdd.vn/2021/10/CookDishThumb/2-cach-lam-banh-khoai-lang-yen-mach-giam-can-thom-ngon-don-thumb-620x620.jpg",
+        "name": "Bánh khoai lang yến mạch",
+        "salePrice": 20000,
+        "price": 0
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "email": "locnguyen@gmail.com",
+      "name": "Tan Loc",
+      "password": "123"
+    },
+    {
+      "email": "loc.nguyen@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "email": "loc.nguyen@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "Nguyễn Tấn Lộc",
+      "email": "1@gmail.com",
+      "password": "123",
+      "repeat password": "123",
+      "id": 4
+    },
+    {
+      "email": "1@gmail.com",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "Nguyễn Tấn Lộc",
+      "email": "loc.nguyencse@gmail.com",
+      "password": "123",
+      "repeat password": "123",
+      "id": 6
+    },
+    {
+      "name": "Nguyễn Tấn Lộc",
+      "email": "loc.nguyencse2@gmail.com",
+      "password": "12345",
+      "repeat password": "12345",
+      "id": 7
+    }
+  ],
+  "chat": [
+    {
+      "id": 1,
+      "messege": "ngon, re"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": "https://images.foody.vn/res/g12/113651/s120x120/a6a21bb5-aa3a-49d9-a8f5-4fc3a55a69ec.jpeg",
+      "name": "[Pizza Chất] Gà BBQ Nướng Dứa (Chicken Delight)",
+      "salePrice": 89000,
+      "price": 120000,
+      "reviews": "5, totsadasdghasjdgjsadgjhas",
+      "description": "Thịt gà nướng cùng với dứa và phô mai thượng hạng",
+      "blog": "ngon, re"
+    },
+    {
+      "id": 2,
+      "image": "https://images.foody.vn/res/g12/113651/s120x120/a6a21bb5-aa3a-49d9-a8f5-4fc3a55a69ec.jpeg",
+      "name": "[Pizza Chất] Giăm Bông và Thịt Xông Khói (Ham & Bacon)",
+      "salePrice": 89000,
+      "price": 120000
+    },
+    {
+      "id": 3,
+      "image": "https://images.foody.vn/res/g12/113651/s120x120/db3166fa-b554-4e3d-a124-787a6da5-9d827404-210505142617.jpeg",
+      "name": "PIZZA HẢI SẢN & ĐÀO (Seafood & Peach)",
+      "salePrice": 169000,
+      "price": 200000
+    },
+    {
+      "id": 4,
+      "image": "https://nhahangkimgiadalat.com/images/slide/feb216bdd35afa73086fbab2b89b059c.jpg",
+      "name": "Pizza Hải Sản Pesto Xanh (Secret Recipe Seafood Pesto)",
+      "salePrice": 169000,
+      "price": 0
+    },
+    {
+      "id": 5,
+      "image": "https://images.foody.vn/res/g12/113651/s120x120/2018615141312-super-deluxe.jpg",
+      "name": "Pizza 5 loại thịt đặc biệt và rau củ (Super Deluxe)",
+      "salePrice": 119000,
+      "price": 150000
+    },
+    {
+      "id": 6,
+      "image": "https://images.foody.vn/res/g99/984820/s570x570/b4d1e555-3f25-4f80-8c37-c4c6cb829d2c.jpg",
+      "name": "Cơm trộn Sashimi",
+      "salePrice": 89000,
+      "price": 109000
+    },
+    {
+      "id": 7,
+      "image": "https://images.foody.vn/res/g99/984820/s570x570/67a75d73-1f03-475c-9ba3-910a2737-f7285efc-211018135059.jpeg",
+      "name": "Combo mix 8 viên",
+      "salePrice": 79000,
+      "price": 99000
+    },
+    {
+      "id": 8,
+      "image": "https://images.foody.vn/res/g99/984820/s570x570/6672beae-2e5d-47b2-a500-ea9ac97b77c5.jpeg",
+      "name": "Combo sushi cá hồi",
+      "salePrice": 59000,
+      "price": 87000
+    },
+    {
+      "id": 9,
+      "image": "https://images.foody.vn/res/g99/984820/s120x120/05c79e0f-d715-4d62-96e8-129991ab01e0.jpeg",
+      "name": "Sushi cuộn cá hồi",
+      "salePrice": 32000,
+      "price": 0
+    },
+    {
+      "id": 10,
+      "image": "https://images.foody.vn/res/g99/984820/s120x120/ae9ae99f-c34d-460a-b24f-710f3da94eee.jpg",
+      "name": "Sushi lươn nướng",
+      "salePrice": 38000,
+      "price": 50000
+    }
+  ]
+}
