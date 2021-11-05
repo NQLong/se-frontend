@@ -21,7 +21,8 @@ function Header(props) {
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo, error } = userSignin;
   console.log(userInfo);
-  const [search, setSearch] = useState("");
+  const cartItems = useSelector((state) => state.cart.cartItems);
+  const amount = cartItems.reduce((a, b) => a + b.qty, 0);
 
   const [menu, setMenu] = useState(true);
 
@@ -40,7 +41,7 @@ function Header(props) {
           </span>
         </div>
         <div className="search">
-          <form>
+          <form >
             <input
               type="text"
               name="search"
@@ -94,7 +95,7 @@ function Header(props) {
               <ShoppingCartOutlined
                 style={{ fontSize: "30px" }}
               ></ShoppingCartOutlined>
-              <span className="count">  </span>
+              <span className="count"> {amount} </span>
             </Link>
           </li>
         </ul>
