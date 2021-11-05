@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage'
 import SignupPage from './pages/SignupPage';
 import DetailPage from './pages/DetailPage';
+import ProductPage from './pages/ProductPage';
 import CartPage from './pages/CartPage';
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
 
         <Route path='/cart'>
           <CartPage></CartPage>
+        </Route>
+
+        <Route path="/product">
+          <ProductPage></ProductPage>
         </Route>
 
       </Router>

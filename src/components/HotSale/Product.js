@@ -30,7 +30,7 @@ function Product(props) {
     }
 
     return (
-        <div className="hotsale-listproduct-product" style={{backgroundColor:'white',borderRadius:20,marginRight:5,width: '19%'}}>
+        <div className="hotsale-listproduct-product" style={{backgroundColor:'white',borderRadius:20,marginRight:5,marginBottom:10,width: '19%'}}>
             <Link to={"/detail/" + product.id}>
                 <img src={product.image}></img>
                 <p className="hotsale-listproduct-product-name">{product.name}</p>
