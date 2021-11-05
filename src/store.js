@@ -1,6 +1,7 @@
 import {createStore, combineReducers, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk'
 import { getAllUserReducer, UserSigninReducer, UserSignupReducer} from './reducers/UserReducer'
+import {getProductByIdReducer} from './reducers/ProductReducer'
 
 
 const initialState = {
@@ -15,6 +16,7 @@ const reducer = combineReducers({
   users: getAllUserReducer,
   userSignin: UserSigninReducer,
   userSignup: UserSignupReducer,
+  getProductById: getProductByIdReducer,
 
 });
 

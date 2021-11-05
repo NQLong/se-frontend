@@ -5,6 +5,7 @@ import Carousel from '../components/Slider/Carousel'
 import Pizza from '../components/HotSale/components/Pizza'
 import Sushi from '../components/HotSale/components/Sushi'
 import TrangMieng from '../components/HotSale/components/TrangMieng';
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 function HomePage() {
     
@@ -15,6 +16,7 @@ function HomePage() {
             <Pizza></Pizza> 
             <Sushi></Sushi>
             <TrangMieng></TrangMieng>
+            <ScrollToTop></ScrollToTop>
             <Footer></Footer>
         </div>
     );
