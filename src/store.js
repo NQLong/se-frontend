@@ -25,7 +25,9 @@ const reducer = combineReducers({
 
   allProduct: getAllProductReducer,
   getProductById: getProductByIdReducer,
-  cart: CartReducer
+  cart: CartReducer,
+
+
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

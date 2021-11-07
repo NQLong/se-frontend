@@ -33,4 +33,30 @@ export const SignoutUser = (user) => async (dispatch) => {
   document.location.href = '/';
 };
 
+//Admin: lấy tất cả người dùng
+export const getAllUser = () => async (dispatch, getState) => {
+  const {
+    userSignin: {userInfo},
+  } = getState()
+  try {
+    const {data} = await  axios.get('http://localhost:3000/user')
+    console.log(data)
+    dispatch({type: 'GET_ALL_USER', payload: data})
+  } catch (error) {
+    dispatch({type: 'GET_ALL_USER_FAIL', payload: error.message})
+  }
+}
+
+export const deleteUser = (userId) => async (dispatch, getState) => {
+  const {
+    userSignin: {userInfo},
+  } = getState()
+  try {
+    const {data} = await axios.delete(`http://localhost:3000/user/delete/${userId}`)
+    dispatch({type: 'DELETE_USER', payload: data})
+  } catch (error) {
+    dispatch({type: 'DELETE_USER_FAIL', error: error.message})
+  }
+}
+
 

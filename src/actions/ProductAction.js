@@ -20,4 +20,15 @@ export const getproductById = (id) => async (dispatch) => {
   }
 };
 
+export const paginationProduct = (page) => async (dispatch) => {
+  try {
+    const data = await axiosClient.get(
+      `/pizza`
+    );
+    dispatch({ type: "PAGINATION_PRODUCT", payload: data });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 
