@@ -1,0 +1,17 @@
+@import "sidebar.scss";
+@import "container.scss";
+@import "menu.scss";
+@import 'cart.scss';
+@import "form.scss";
+@import "style/index";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: $background-dark-1;
+}
+

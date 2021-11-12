@@ -1,22 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import {Provider} from 'react-redux'
-import store from './store'
-import "antd/dist/antd.css";
-import "leaflet/dist/leaflet.css";
+// import Sidebar from './components/sidebar';
+import {
+  BrowserRouter,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
+import Client from './layouts/client';
+import './assets/css/index.css';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <React.StrictMode>
-    <App />
-  </React.StrictMode>
-  </Provider>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" render={(props) => <Client {...props} />} />
+        {/* <Redirect from="*" to="/" /> */}
+      </Switch>
+    </BrowserRouter>
+  </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 

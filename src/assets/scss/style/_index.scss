@@ -1,0 +1,39 @@
+@import "./var";
+@import "./event";
+@import "./flex";
+@import "./height";
+@import "./margin";
+@import "./text";
+@import "./width";
+@import "./padding";
+@import "./opacity";
+
+.text-center {
+  text-align: center;
+}
+
+.center-content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+  background-color: $form-background;
+  border-radius: 5px;
+  border: 1px solid $background-light;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -100;
+  display: None;
+  // display: None;
+  // transition: display 100s ease;
+}
+
+.transparent-bg {
+  background-color: transparent;
+}

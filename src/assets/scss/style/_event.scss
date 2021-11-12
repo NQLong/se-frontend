@@ -1,0 +1,7 @@
+.stop-pointer-event {
+  pointer-events: none;
+}
+
+.stop-scroll-event {
+  overflow: hidden;
+}
